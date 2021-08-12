@@ -211,8 +211,6 @@ header {
 .hero-button:hover,
 .hero-button:focus {
     background-color: var(--button-in-focus);
-    /* color: var(--brand-color);
-    border: 1px solid var(--brand-color); */
 }
 
 /* hero section end */
@@ -532,18 +530,10 @@ footer .logo {
 
 .subscription {
     margin-left: 93px;
-    display: block;
-    width: 358px;
-    height: 50px;
 }
 
 .subscription-form {
     display: flex;
-}
-
-.subscription-form label {
-    display: flex;
-    justify-content: space-between;
 }
 
 .e-mail-subscription > input {
@@ -575,15 +565,12 @@ footer .logo {
     align-items: center;
     margin-left: 12px;
     padding: 10px 29px;
+
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.8;
-
-    /* display: flex;
-    align-items: center;
-    text-align: center; */
     letter-spacing: 0.06em;
 
     color: var(--main-text);
@@ -807,6 +794,7 @@ footer .logo {
 
 .form-field {
     position: relative;
+    margin-bottom: 10px;
 }
 
 .field-label {
@@ -823,15 +811,14 @@ footer .logo {
 .form-field > .icon {
     position: absolute;
     left: 15px;
-    top: 45%;
-    transform: translateY(-65%);
+    top: 50%;
+    transform: translateY(-50%);
     transition: fill var(--transition-type);
 }
 
 .field-input {
     width: 100%;
     height: 40px;
-    margin-bottom: 10px;
     padding-left: 42px;
 
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -869,7 +856,6 @@ footer .logo {
 }
 
 .check-conditions {
-    position: relative;
     margin-bottom: 30px;
 }
 
@@ -878,6 +864,7 @@ footer .logo {
     justify-content: center;
     align-items: center;
     
+    cursor: pointer;
     line-height: 1.71;
     color: var(--logo-icon-header);
 }
@@ -887,7 +874,8 @@ footer .logo {
 }
 
 .checkbox {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     width: 15px;
     height: 15px;
     margin-right: 5px;
@@ -895,19 +883,14 @@ footer .logo {
     border: 2px solid #2a2a2a;
     border-radius: 4px;
 
-    cursor: pointer;
     transition: fill var(--transition-type), border-color var(--transition-type);
     fill: transparent;
 }
   
 .input-checkbox:checked + .checkbox {
-    display: flex;
-    align-items: center;
     border-color: var(--brand-color);
     fill: var(--light-background);
     background-color: var(--brand-color);
-
-    cursor: pointer;
 }
 
 .input-checkbox:hover + .checkbox,
